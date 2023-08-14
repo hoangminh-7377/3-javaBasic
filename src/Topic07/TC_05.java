@@ -9,13 +9,23 @@ public class TC_05 {
         System.out.println("nhập n");
         int n = scanner.nextInt();
         scanner.close();
-        int giaithưa=1;
+        System.out.println("giai thừa: " +tinhGiaithua(n));
+    }
+    public static long tinhGiaithua (int n)
+    {
+        int giaithua=1;
         //khởi tạo i=n -> duyệt vòng lặp bắt đầu từ số n chú không phải từ số 0
-
-        for(int i=1;i<=n;i++)
+        if (n==0 || n==1)
         {
-            giaithưa *=i;
+            return giaithua;
         }
-        System.out.println("giai thừa: " +giaithưa);
+        else
+        {
+            for(int i=2;i<=n;i++)
+            {
+                giaithua *=i;
+            }
+        }
+        return giaithua;
     }
 }
