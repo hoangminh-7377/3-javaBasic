@@ -28,7 +28,5 @@ public class TC_02 {
         System.out.println("Vị trí của Tutorials: "+statement.indexOf("Tutorials"));
         System.out.println(statement.replace("Online","Offline"));
         System.out.println("số lượng số: " +countNumber);
-
-
     }
 }
